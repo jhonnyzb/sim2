@@ -17,6 +17,6 @@ export class Module extends Model {
   }
 
   user(options = {}) {
-    return this.get('https://sim.idrd.gov.co/base-ldap/public/api/my-modules?page=1&per_page=35', options)
+    return this.get(Api.END_POINTS.USER_MODULES(), options)
   }
 }

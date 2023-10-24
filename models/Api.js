@@ -4,12 +4,12 @@ import certifications from '@/models/routes/certifications'
 const api = process.env.VUE_APP_API_URL_BASE
 export const Api = {
   END_POINTS: {
-    CSFR_TOKEN: () => `${api}/csfr-cookie`,
-    FORGOT_PASSWORD: () => `${api}/password/forgot`,
-    RESET_PASSWORD: () => `${api}/password/reset`,
-    MODULES: () => `${api}/api/admin/modules`,
-    USER_MODULES: () => `${api}/api/my-modules`,
-    DOCUMENT_TYPES: () => `${api}/api/document-types`,
+    CSFR_TOKEN: () => `https://sim.idrd.gov.co/base-ldap/public/csfr-cookie`,
+    FORGOT_PASSWORD: () => `https://sim.idrd.gov.co/base-ldap/public/password/forgot`,
+    RESET_PASSWORD: () => `https://sim.idrd.gov.co/base-ldap/public/password/reset`,
+    MODULES: () => `https://sim.idrd.gov.co/base-ldap/public/api/admin/modules`,
+    USER_MODULES: () => `https://sim.idrd.gov.co/base-ldap/public/api/my-modules`,
+    DOCUMENT_TYPES: () => `https://sim.idrd.gov.co/base-ldap/public/api/document-types`,
     // Orfeo
     ...orfeo,
     // Parks
